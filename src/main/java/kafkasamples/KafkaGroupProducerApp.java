@@ -16,7 +16,7 @@ public class KafkaGroupProducerApp {
 		KafkaProducer<String, String> myProducer = new KafkaProducer<String, String>(props);
 		try {
 			for (int i = 0; i < 150; i++) {
-				myProducer.send(new ProducerRecord<String, String>("my-topic", "asdfghjkllkjhg"));
+				myProducer.send(new ProducerRecord<String, String>("myTopic", "asdfghjkllkjhg"));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

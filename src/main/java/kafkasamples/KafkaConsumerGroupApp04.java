@@ -19,7 +19,7 @@ public class KafkaConsumerGroupApp04 {
 		KafkaConsumer<String, String> myConsumer = new KafkaConsumer<String, String>(props);
 
 		ArrayList<String> topics = new ArrayList<String>();
-		topics.add("my-topic");
+		topics.add("myTopic");
 
 		myConsumer.subscribe(topics);
 
